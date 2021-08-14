@@ -118,13 +118,13 @@ button{
 }
 foot {
     position: fixed;  
-    left: 10px;  
+    left: 0;  
     bottom: 5px;  
-    right: 10px;   
+    right: 0;   
     width: 100%;  
     background-color:black;  
     color: white;  
-    text-align: center;  
+    text-align: center;
 }
 image{
     top: 20rem;
