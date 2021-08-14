@@ -4,14 +4,15 @@
 }
 .chat-open-btn {
     background-color: #aa5ff0;
+    border: none;
     color: white;
     padding: 10px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
     position: fixed;
-    bottom: 50px;
-    right: 100px;
+    bottom: 15px;
+    right: 15px;
     width: 69px;
     height: 69px;
     transition-duration: 0.4s;
