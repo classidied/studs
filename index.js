@@ -9,6 +9,9 @@ const io = new Server(server);
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/html/room.html');
 });
+//statis folder being set
+app.use(experss.static(path.join(__dirname, 'public')));
+
 
 // socket.io 
 io.on('connection', (socket) => {
@@ -24,6 +27,7 @@ io.on('connection', (socket) => {
     });
 });
 
+const PORT=3000 || process.env.PORT;
 server.listen(3000, () => {
   console.log('listening on *:3000');
 });

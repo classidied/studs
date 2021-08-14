@@ -44,14 +44,14 @@
       <h1>
         Username
       </h1>
-      <h2><input type="text" name="Username" placeholder="Username"></h2>
     </div>
     <br> <br>
     <div>
-      <form action="room.html" href="room.html"> <!--we put the web link here with the diff rooms somehow-->
-        <button type="submit" value="This should bring you to a website?"> <!--if anybody know what the fuck the value does lmk ;*-->
+      <form action="room.html" href="room.html" onsubmit="return false;" aria-required=""> <!--we put the web link here with the diff rooms somehow-->
+        <button type="submit" id="nameAndNumberPls" onclick="username()" value="This should bring you to a website?"> <!--if anybody know what the fuck the value does lmk ;*-->
           Join Chat
       </button>
+      <input type="text" id="username" name="Username" placeholder="Username" required>
       </form>
     </div>
     <trademark>
