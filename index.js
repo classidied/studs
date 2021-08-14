@@ -7,10 +7,10 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/html/room.html');
+  res.sendFile(__dirname + '/html/aboutUs.html');
 });
 //statis folder being set
-app.use(experss.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 
 // socket.io 
