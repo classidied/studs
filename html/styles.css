@@ -83,7 +83,7 @@
 body {
     background: #d3c4d3;
     background-size: 400% 400%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
     animation: change 15s ease-in-out infinite;
 }
@@ -93,19 +93,19 @@ h1 {
     color: white;
     position:absolute;
     top: 18.5rem;
-    left: 39.8rem;
+    left: 39.3rem;
     transform: translate (-50%, -50%);
 }
-h2{
+input{
     position:absolute;
     top: 22rem;
-    left: 37.2rem;
+    left: 36.2rem;
     transform: translate (-50%, -50%);
 }
 button{
     position:absolute;
     top: 25rem;
-    left: 40.6rem;
+    left: 40.5rem;
     transform: translate (-50%, -50%);
 }
 .rect{
@@ -115,6 +115,16 @@ button{
     left:34.5rem;
     width: 300px;
     height: 200px;
+}
+foot {
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    width: 100%;  
+    background-color:black;  
+    color: white;  
+    text-align: center;  
 }
 image{
     top: 20rem;
@@ -131,6 +141,7 @@ image{
 }
 */
 figcaption{
+    position:absolute;
     text-align: center;
     margin: 0.1in 0 0.5in 0;
     font-size: 14px;
