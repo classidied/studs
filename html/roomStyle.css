@@ -56,7 +56,7 @@
  .worktime {
     background-color: rgb(255, 255, 255);
     color: #fff;
-    bottom: 50px;
+    bottom: 125px;
     clear: none;
     width: 37%; 
     position: absolute;
@@ -68,7 +68,7 @@
     background-color: rgb(255, 255, 255);
     color: #fff;
     opacity: .5;
-    bottom: 50px;
+    bottom: 125px;
     clear: none;
     width: 37%;
     position: absolute;
@@ -81,9 +81,9 @@
     height: 110px;
     width: 110px;
     position:relative;
-    left: 42%;
+    left: 7.7%;
     background-color: white;
-    opacity: 100 !important;
+    opacity: 100 !important; /*why tf isnt this working*/
     border-width: 5px;
     border-color: #bd5bbd;
   }
