@@ -87,35 +87,38 @@
     
     <!-- chat function???? -->
     <div class="chat">
+        <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
         <button class="chat-open-btn" id="chat-open-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
-        
         <!-- form thing for chat? -->
         <ul id="messages"></ul>
         <form id="chat-form">
-            <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
-            <div>
-                <script>
-                    document.getElementById('chat-open-btn').onclick = function() {
-                        document.getElementById("chat-form").style.display="block";
-                    }​;
-                    document.getElementById('chat-close-btn').onclick = function() {
-                        document.getElementById("chat-form").style.display="none";
-                    };
-                   /*
-                    document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
-                    document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
-                    function openForm() {
-                        document.querySelector(".chat-open-btn").style.display = "block";
-                    }
-                    function closeForm() {
-                        document.querySelector(".chat-close-btn").style.display = "none";
-                    }
-                    */
-                </script>
-            </div>
-            <input id="chat-input" autocomplete="off" />
+            <h1>Chat!</h1>
+            
+            
+            <input id="chat-input" autocomplete="off"/>
             <button class="chat-send-btn">send</button>
         </form>
+        <!-- checking if the chat button was clicked-->
+        <div>
+            <script>
+                document.getElementById('chat-open-btn').onclick = function() {
+                    document.getElementById("chat-form").style.display="block";
+                }​;
+                document.getElementById('chat-close-btn').onclick = function() {
+                    document.getElementById("chat-form").style.display="none";
+                };
+               /*
+                document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
+                document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
+                function openForm() {
+                    document.querySelector(".chat-open-btn").style.display = "block";
+                }
+                function closeForm() {
+                    document.querySelector(".chat-close-btn").style.display = "none";
+                }
+                */
+            </script>
+        </div>
         <!-- establishing connection through socket.io -->
         <script src="/socket.io/socket.io.js"></script>
         <script>
