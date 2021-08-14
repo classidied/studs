@@ -41,3 +41,7 @@
  .chat-send-btn {
      padding: 2px 2px;
  }
+ demo{
+     position:absolute;
+     top:100px;
+ }
