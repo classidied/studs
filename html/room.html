@@ -43,4 +43,18 @@
             //var countDownDate = new Date ("") <-i have no idea if this works i just googles this shit
         </script>
     </div>
+    <!-- chat function???? -->
+    <div>
+        <p id="chat"></p>
+        <!-- form thing for chat? -->
+        <ul id="messages"></ul>
+        <form id="form" action="">
+            <input id="input" autocomplete="off" /><button>Send</button>
+        </form>
+        <!-- establishing connection through socket.io -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io();
+        </script>
+    </div>
 </html>
