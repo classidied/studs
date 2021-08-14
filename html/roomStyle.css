@@ -45,15 +45,7 @@
      padding: 2px 2px;
  }
 
- #butts {
-    border-radius: 50%;
-    height: 110px;
-    width: 110px;
-    position:relative;
-    left: 50%;
-    background-color: white;
-    opacity: 100;
- }
+
 
  h2 {
     text-align:center;
@@ -61,7 +53,18 @@
     opacity: 1;
  }
 
- .worktime, .breaktime {
+ .worktime {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    bottom: 50px;
+    clear: none;
+    width: 37%; 
+    position: absolute;
+    left: 460px;
+    opacity: 50%;
+ }
+
+ /*.breaktime {
     background-color: rgb(255, 255, 255);
     color: #fff;
     opacity: .5;
@@ -70,4 +73,18 @@
     width: 37%;
     position: absolute;
     left: 300px;
- }
+ }*/
+
+  #butts {
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    position:relative;
+    left: 42%;
+    background-color: white;
+    opacity: 100;
+  }
+
+  buttons {
+      opacity: 1;
+  }
