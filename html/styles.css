@@ -162,9 +162,23 @@ image{
     opacity: .5;
 }
 */
-h4{
-    font-size:2rem;
-    font-family: Garamond, serif;
-
+figcaption{
+    text-align: center;
+    margin: 0.1in 0 0.5in 0;
+    font-size: 14px;
 }
+p{
+    text-align: left;
+    margin:2rem 1in 2rem 1in;
+}
+figure{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 27%;
+}
+marquee {
+    font-size: 2rem;
+    font-family: Trattatello, fantasy, bold;
+  }
 
