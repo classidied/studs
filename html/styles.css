@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 .navbar {
@@ -92,14 +92,15 @@ h1 {
     color: white;
     position:absolute;
     top: 18.5rem;
-    left: 39.3rem;
+    left: 28rem;
     transform: translate (-50%, -50%);
 }
 input{
     position:absolute;
     top: 22rem;
-    left: 36.2rem;
+    left: 37rem;
     transform: translate (-50%, -50%);
+    height: 40px;
 }
 button{
     position:absolute;
@@ -111,15 +112,13 @@ button{
     position: fixed; 
     background: #bd5bbd;
     top: 17rem;
-    left:34.5rem;
-    width: 300px;
+    left:25rem;
+    width: 650px;
     height: 200px;
 }
 foot {
     position: fixed;  
-    left: 10px;  
     bottom: 5px;  
-    right: 10px;   
     width: 100%;  
     background-color:black;  
     color: white;  
