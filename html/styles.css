@@ -79,6 +79,7 @@
 .breaktime{
     visibility: hidden;
 }
+
 /* in room.html */
 .chat-btn {
     background-color: #aa5ff0;
@@ -111,6 +112,7 @@
     box-sizing: border-box;
 }
 
+.chat-btn {border-radius: 50%;}
 body{
     background: #d3c4d3;
     background-size: 400% 400%;
@@ -160,5 +162,9 @@ image{
     opacity: .5;
 }
 */
+h4{
+    font-size:2rem;
+    font-family: Garamond, serif;
 
+}
 
