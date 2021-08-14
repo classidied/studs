@@ -14,26 +14,28 @@
     </div>
     <!--JS: if they press "take a break instead" it should go to the next div thing, the div underneath this. it should go here if timer for work hits zero OR if take a break button is pressed-->
     <div class="breaktime">
-        <h2>How long would you like to take a break?</h2>
+        <h2>How long would you like to take a break for?</h2>
         <button type="button">5 minutes</button>
         <button type="button">10 minutes</button>
         <button type="button">15 minutes</button>
         <button type="button">skip break</button>
     </div>
-    <script>
+    <script> 
         var minutes = 0;
         var seconds = 0;
         var interval = null;
         document.getElementsByClassName('worktime').addEventListener('change', e => {
-            minutes = +e.target.value; //idk wtf this does dont ask me
-        });
+               minutes = +e.target.value; //idk wtf this does dont ask me
+        }); 
         document.getElementsByClassName('startTimer').addEventListener('click', () => {
             var timeInSeconds = (minutes * 60);
             var  displayTime = () => {
-                var displayMinutes = minutes;
-                document.getElementById("timer").innerHTML = displayMinutes + " : " + displaySeconds;
+            var displayMinutes = minutes;
+            document.getElementById("timer").innerHTML = displayMinutes + " : " + displaySeconds;
             };
+        });
     </script>
+
     <!--somewhere here i think there's gonna be some js that uses the value the user pressed for the timer thing-->
     <div>
         <p id="timer"></p>
