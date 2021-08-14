@@ -109,7 +109,7 @@ button{
     transform: translate (-50%, -50%);
 }
 .rect{
-    position: fixed; 
+    position: absolute; 
     background: #bd5bbd;
     top: 17rem;
     left:34.5rem;
