@@ -79,10 +79,9 @@
     visibility: hidden;
 }
 
-
 body {
     background: #d3c4d3;
-    background-size: 400% %;
+    background-size: 400%;
     /*overflow: hidden;*/
     position: relative;
     animation: change 15s ease-in-out infinite;
