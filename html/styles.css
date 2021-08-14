@@ -164,17 +164,18 @@ image{
 */
 figcaption{
     text-align: center;
-
+    margin: 0.1in 0 0.5in 0;
+    font-size: 14px;
 }
 p{
-    text-align: right;
+    text-align: left;
     margin:2rem 1in 2rem 1in;
 }
 figure{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 28%;
+    width: 27%;
 }
 marquee {
     font-size: 2rem;
