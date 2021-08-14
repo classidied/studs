@@ -20,7 +20,20 @@
         <button type="button">15 minutes</button>
         <button type="button">skip break</button>
     </div>
-
+    <script>
+        var minutes = 0;
+        var seconds = 0;
+        var interval = null;
+        document.getElementsByClassName('worktime').addEventListener('change', e => {
+            minutes = +e.target.value; //idk wtf this does dont ask me
+        });
+        document.getElementsByClassName('startTimer').addEventListener('click', () => {
+            var timeInSeconds = (minutes * 60);
+            var  displayTime = () => {
+                var displayMinutes = minutes;
+                document.getElementById("timer").innerHTML = displayMinutes + " : " + displaySeconds;
+            };
+    </script>
     <!--somewhere here i think there's gonna be some js that uses the value the user pressed for the timer thing-->
     <div>
         <p id="timer"></p>
@@ -28,5 +41,4 @@
             //var countDownDate = new Date ("") <-i have no idea if this works i just googles this shit
         </script>
     </div>
-
 </html>
