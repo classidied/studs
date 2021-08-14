@@ -41,6 +41,9 @@
     text-decoration: none;
     font-size: 3rem;
     height: 75px;
+    left: 40px;
+    position: absolute;
+
 
 }
 
@@ -68,78 +71,50 @@
     transition:all 0.3s ease;
 }
 
-@media screen and (max-width: 960px) {
-    .navbar_container{
-        display: flex;
-        justify-content:space-between ;
-        height: 80px;
-        z-index:1 ;
-        width: 100%;
-        max-width: 1300px;
-        padding:0;
-
-    }
-    .navbar_menu{
-        display:grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-        background: #131313;
-        
-    }
-    .navbar_menu.active{
-        background: #131313;
-        top: 100%;
-        opacity:1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar_logo{
-        padding-left: 25px;
-
-    }
-    .navbar_toggle.bar{
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background:white;
-    }
-    .navbar_item{
-        width: 100%;
-
-    }
-    .navbar_links{
-        text-align: center;
-        padding: 2rem;
-        width:100%;
-        display: table;
-    }
-
-    #mobile-menu{
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate (5%, 20%);
-    }
-    .navbar_toggle .bar{
-        display: block;
-        cursor:pointer;
-    }
-}
 .main{
     background-color: #b968b9;
 }
 
 .breaktime{
     visibility: hidden;
+}
+body{
+    background: #d3c4d3;
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 15s ease-in-out infinite;
+}
+
+h1{
+    font-size:1.3rem;
+    color: white;
+    position:absolute;
+    top: 25rem;
+    left: 45.8rem;
+    transform: translate (-50%, -50%);
+}
+h2{
+    position:absolute;
+    top: 27rem;
+    left: 44.5rem;
+    transform: translate (-50%, -50%);
+}
+button{
+    position:absolute;
+    top: 30rem;
+    left: 47.5rem;
+    transform: translate (-50%, -50%);
+}
+.rect{
+    background: #bd5bbd;
+    width: 300px;
+    height: 200px;
+    top: 22rem;
+    left: 40rem;
+    position:absolute
+}
+image{
+    top: 20rem;
+    left:100rem;
+    position:absolute;
 }
