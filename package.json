@@ -1,0 +1,22 @@
+{
+  "name": "studs",
+  "version": "1.0.0",
+  "description": "AAAAAAAAAAAAAAAAA",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/classidied/studs.git"
+  },
+  "author": "classidied, RammyMcRamster, HeliaSeyedmazhari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/classidied/studs/issues"
+  },
+  "homepage": "https://github.com/classidied/studs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
