@@ -4,8 +4,21 @@
 }
 .chat {
     position: fixed;
+    right: 30px;
+    bottom: 95px;
+    background-color: rgb(225, 199, 235);
+
 }
-.chat-open-btn {
+
+.chat-header {
+    background-color:rgb(219, 160, 247);
+    font-weight: bold;
+}
+.main-chat {
+    background-color:blueviolet;
+}
+
+.chat-open-btn, .chat-close-btn {
     background-color: #aa5ff0;
     border: none;
     color: white;
@@ -18,23 +31,23 @@
     right: 15px;
     width: 69px;
     height: 69px;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     border-radius: 100%;
 }
-.chat-open-btn:hover {
+.chat-open-btn:hover, .chat-close-btn:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.199), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: #ba82ee;
     color: white;
 }
 
 #chat-input {
-    width: 10%;
+    width: 20%;
     padding: 5px 8px;
     margin: 8px 0;
     box-sizing: border-box;
-    position: static;
-    bottom: 30px;
-    right: 20px;
+    position: fixed;
+    bottom: 95px;
+    right: 40px;
 }
  #chat-form {
      position: relative;

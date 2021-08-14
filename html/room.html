@@ -90,41 +90,46 @@
     <!-- chat function???? -->
     <div class="chat">
         <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
-        <button class="chat-open-btn" id="chat-open-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
+        <button class="chat-open-btn" onClick="openForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
+        <button class="chat-close-btn" onClick="closeForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
         <!-- giant empty container thing to log messages and whatever -->
         <div class="container">
             <header class="chat-header">Chat!</header>
-            <main class="main-chat">
-
-            </main>
+            <!-- form thing for chat? -->
+            <div class="form-container">
+                <form id="chat-form">
+                    <input id="chat-input" autocomplete="off" type="text" placeholder="Send a message"/>
+                    <button class="chat-send-btn">send</button>
+                </form>
+            </div>
         </div>
-        <!-- form thing for chat? -->
-        <div class="form-container">
-            <form id="chat-form">
-                <input id="chat-input" autocomplete="off" type="text" placeholder="Send a message"/>
-                <button class="chat-send-btn">send</button>
-            </form>
-        </div>
-        
         <!-- checking if the chat button was clicked-->
         <div>
             <script>
+                /*
                 document.getElementById('chat-open-btn').onclick = function() {
                     document.getElementById("chat-form").style.display="block";
+                    document.getElementById('chat-open-btn').style.display="none";
+                    document.getElementById('chat-close-btn').style.display="block";
                 }​;
                 document.getElementById('chat-close-btn').onclick = function() {
                     document.getElementById("chat-form").style.display="none";
+                    document.getElementById('chat-close-btn').style.display="none";
+                    document.getElementById('chat-open-btn').style.display="block";
                 };
-               /*
+                */
+               
                 document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
                 document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
                 function openForm() {
-                    document.querySelector(".chat-open-btn").style.display = "block";
+                    document.querySelector(".chat-close-btn").style.display = "block";
+                    document.getElementById("chat-form").style.display="block";
                 }
                 function closeForm() {
-                    document.querySelector(".chat-close-btn").style.display = "none";
+                    document.querySelector(".chat-open-btn").style.display = "block";
+                    document.getElementById("chat-form").style.display="none";
                 }
-                */
+                
             </script>
         </div>
         <!-- establishing connection through socket.io -->
@@ -150,7 +155,7 @@
                 window.scrollTo(0, document.body.scrollHeight);
             });
         </script>
-        <button class="chat-close-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
+        
     </div>
     
 </html>
