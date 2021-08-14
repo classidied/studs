@@ -10,10 +10,19 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/html/room.html');
 });
 
+// socket.io 
 io.on('connection', (socket) => {
+    // logging connections
     console.log('a user connected');
+    socket.on('disconnect', () => {
+      console.log('user disconnected');
+    });
+    // logging chat messages
+    socket.on('chat message', (msg) => {
+        io.emit('chat message', msg);
+        console.log('message: ' + msg);
+    });
 });
-
 
 server.listen(3000, () => {
   console.log('listening on *:3000');
