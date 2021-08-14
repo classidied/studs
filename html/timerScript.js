@@ -11,8 +11,5 @@ function updateCD(){
 
     seconds= seconds<10? '0'+seconds:seconds;
     countdownEl.innerHTML= `${minutes}:${seconds}`;
-    if (time==0){
-
-    }
     time--;
 }

@@ -44,35 +44,6 @@
  .chat-send-btn {
      padding: 2px 2px;
  }
-<<<<<<< HEAD
- demo{
-     position:absolute;
-     top:100px;
- }
- body{
-     font-family: 'Roboto', sans-serif;
-     margin:0;
- }
- p{
-     display: inline-flex;
-     align-items: center;
-     justify-content: flex-start;
-     width: 200px;
-     height: 70px;
-     font-size:200px;
-     position:fixed;
-     top:21rem;
-     left: 30rem;
- }
- .rect{
-    position: fixed; 
-    background: #d4c4d4b9;
-    top: 17rem;
-    left:28rem;
-    width: 560px;
-    height: 200px;
-}
-=======
 
  #butts {
     border-radius: 50%;
@@ -100,4 +71,22 @@
     position: absolute;
     left: 300px;
  }
->>>>>>> 0c3d5cac66e4015e0d3e8012757ff55dba7b3c13
+ p{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: 70px;
+    font-size:200px;
+    position:fixed;
+    top:21rem;
+    left: 30rem;
+}
+.rect{
+   position: fixed; 
+   background: #d4c4d4b9;
+   top: 17rem;
+   left:28rem;
+   width: 560px;
+   height: 200px;
+}
