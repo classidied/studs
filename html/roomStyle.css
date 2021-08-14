@@ -73,6 +73,7 @@
     width: 37%;
     position: absolute;
     left: 300px;
+<<<<<<< HEAD
  }*/
 
   #butts {
@@ -88,3 +89,25 @@
   buttons {
       opacity: 1;
   }
+=======
+ }
+ p{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: 70px;
+    font-size:200px;
+    position:fixed;
+    top:21rem;
+    left: 30rem;
+}
+.rect{
+   position: fixed; 
+   background: #d4c4d4b9;
+   top: 17rem;
+   left:28rem;
+   width: 560px;
+   height: 200px;
+}
+>>>>>>> dc1bb7ade2df4c774b526c9fd7d87000ddc9b693

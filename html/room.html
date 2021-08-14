@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/8nXqcugV2Y4?&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="roomStyle.css">
     <link rel="stylesheet" href="nav.css">
@@ -41,11 +42,12 @@
               </div>
             </nav>
             </div> 
+            <div class="rect"></div>
     </head>
-    
-    <!-- music: needs toggle or something
-        <iframe width="0" height="0" src="https://www.youtube.com/embed/f02mOEt11OQ?&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-    -->
+    <body>
+        <p id="countdown"></p>
+        <script src="timerScript.js"></script>
+    </body>
     <div class="worktime"> <!--buttons are here, and they choose what time they'd like. after the brak timer hits 0 it should go here OR if skip break button is here-->
         <h2>How long would you like to work?</h2>
         <button id="butts" type="button" value="">55 minutes</button> <!--purposely not capitalized for the aesthetics-->
@@ -89,15 +91,21 @@
     <div class="chat">
         <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
         <button class="chat-open-btn" id="chat-open-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
+        <!-- giant empty container thing to log messages and whatever -->
+        <div class="container">
+            <header class="chat-header">Chat!</header>
+            <main class="main-chat">
+
+            </main>
+        </div>
         <!-- form thing for chat? -->
-        <ul id="messages"></ul>
-        <form id="chat-form">
-            <h1>Chat!</h1>
-            
-            
-            <input id="chat-input" autocomplete="off"/>
-            <button class="chat-send-btn">send</button>
-        </form>
+        <div class="form-container">
+            <form id="chat-form">
+                <input id="chat-input" autocomplete="off" type="text" placeholder="Send a message"/>
+                <button class="chat-send-btn">send</button>
+            </form>
+        </div>
+        
         <!-- checking if the chat button was clicked-->
         <div>
             <script>
@@ -144,4 +152,5 @@
         </script>
         <button class="chat-close-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
     </div>
+    
 </html>
