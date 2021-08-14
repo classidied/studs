@@ -61,17 +61,22 @@
             //var countDownDate = new Date ("") <-i have no idea if this works i just googles this shit
         </script>
     </div>
-    <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
-    <div>
-        <button class="chat-open-btn" onCLick="openForm()"></button>
-        <script></script>
-    </div>
+    
     <!-- chat function???? -->
     <div class="chat">
         <h2>Chat</h2>
         <!-- form thing for chat? -->
         <ul id="messages"></ul>
-        <form id="chat-form" action="">
+        <form id="chat-form">
+            <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
+            
+            <div>
+                <button class="chat-open-btn" id="chat-open-btn" onCLick="openForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
+                <script>
+                    var clicked = document.getElementById('chat-open-btn');
+
+                </script>
+            </div>
             <input id="chat-input" autocomplete="off" />
             <button class="chat-send-btn">send</button>
         </form>
