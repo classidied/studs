@@ -58,15 +58,18 @@
             //var countDownDate = new Date ("") <-i have no idea if this works i just googles this shit
         </script>
     </div>
+    <!-- button to open chat -->
+    <div>
+        <button class="chat-open-btn">feces</button>
+    </div>
     <!-- chat function???? -->
     <div class="chat">
         <h2>Chat</h2>
-        <p id="chat"></p>
         <!-- form thing for chat? -->
         <ul id="messages"></ul>
         <form id="chat-form" action="">
-            <input id="chat-input" class="chat-input" autocomplete="off" />
-            <button class="chat-btn">^</button>
+            <input id="chat-input" autocomplete="off" />
+            <button class="chat-send-btn">send</button>
         </form>
         <!-- establishing connection through socket.io -->
         <script src="/socket.io/socket.io.js"></script>
