@@ -1,7 +1,10 @@
-#credits {
-    left: 1000px;
+body {
+    background: #d3c4d3;
+    background-size: 400%;
+    /*overflow: hidden;*/
+    position: relative;
 }
-#creds {/*
-    text-siz;
-}*/
+#credits {
+    position: absolute;
 
+}
