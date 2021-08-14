@@ -5,21 +5,28 @@
             <img src="https://cdn.discordapp.com/attachments/834608507911143475/874846836148563998/studs_logo-removebg-preview_1.png" alt="Studs."/>
         </a>
     </head>
-    <div> <!--buttons are here, and they choose what time they'd like-->
+    <div class="worktime"> <!--buttons are here, and they choose what time they'd like. after the brak timer hits 0 it should go here OR if skip break button is here-->
         <h2>How long would you like to work?</h2>
-        <button type="button">25 Minutes</button>
-        <button type="button">55 minutes</button>
-        <button type="button">15 Minutes</button>
+        <button type="button" value="">55 minutes</button> <!--purposely not capitalized for the aesthetics-->
+        <button type="button">25 minutes</button>
+        <button type="button">15 minutes</button>
+        <button type="button">take a break</button>
     </div>
-    <!--JS: if they press "take a break instead" it should go to the next div thing, the div underneath this-->
-    <div>
-        <h2>How long would you like to take</h2>
+    <!--JS: if they press "take a break instead" it should go to the next div thing, the div underneath this. it should go here if timer for work hits zero OR if take a break button is pressed-->
+    <div class="breaktime">
+        <h2>How long would you like to take a break?</h2>
+        <button type="button">5 minutes</button>
+        <button type="button">10 minutes</button>
+        <button type="button">15 minutes</button>
+        <button type="button">skip break</button>
     </div>
 
-    <!--somewhere here i think there's gonna be some js that uses the value the user gave for the timer thing-->
+    <!--somewhere here i think there's gonna be some js that uses the value the user pressed for the timer thing-->
     <div>
         <p id="timer"></p>
-        var countDownDate = new Date ("")
+        <script> //okay so this is actually javascript now so yeah...basically here you wanna get the timer stuff
+            //var countDownDate = new Date ("") <-i have no idea if this works i just googles this shit
+        </script>
     </div>
 
 </html>
