@@ -78,10 +78,9 @@
 .breaktime{
     visibility: hidden;
 }
-<<<<<<< HEAD
-
+/* in room.html */
 .chat-btn {
-    background-color: #5fbbf0;
+    background-color: #aa5ff0;
     border: none;
     color: white;
     padding: 20px;
@@ -90,10 +89,27 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    position: fixed;
+    bottom: 100px;
+    right: 200px;
+    width: 69px;
+    height: 69px;
+    transition-duration: 0.4s;
+}
+.chat-btn {border-radius: 100%;}
+.chat-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.199), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #ba82ee;
+    color: white;
 }
 
-.chat-btn {border-radius: 50%;}
-=======
+.chat-input {
+    width: 10%;
+    padding: 5px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 body{
     background: #d3c4d3;
     background-size: 400% 400%;
@@ -134,4 +150,14 @@ image{
     left:100rem;
     position:absolute;
 }
->>>>>>> da1fd3b54fa13ebceb2e34ae62b71d744e69f700
+/* for a translucent box/mask over most of the bg image to make text more readable
+.box {
+    height:666px;
+    width:666px;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    opacity: .5;
+}
+*/
+
+
