@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/8nXqcugV2Y4?&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="roomStyle.css">
     <link rel="stylesheet" href="nav.css">
@@ -41,25 +42,26 @@
               </div>
             </nav>
             </div> 
+            <div class="rect"></div>
     </head>
-    
-    <!-- music: needs toggle or something
-        <iframe width="0" height="0" src="https://www.youtube.com/embed/f02mOEt11OQ?&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-    -->
+    <body>
+        <p id="countdown"></p>
+        <script src="timerScript.js"></script>
+    </body>
     <div class="worktime"> <!--buttons are here, and they choose what time they'd like. after the brak timer hits 0 it should go here OR if skip break button is here-->
         <h2>How long would you like to work?</h2>
-        <button type="button" value="">55 minutes</button> <!--purposely not capitalized for the aesthetics-->
-        <!--<button type="button">25 minutes</button>
-        <button type="button">15 minutes</button>
-        <button type="button">take a break</button>-->
+        <button id="butts" type="button" value="">55 minutes</button> <!--purposely not capitalized for the aesthetics-->
+        <!--<button id="butts" type="button">25 minutes</button>
+        <button id="butts" type="button">15 minutes</button>
+        <button id="butts" type="button">take a break</button>-->
     </div>
     <!--JS: if they press "take a break instead" it should go to the next div thing, the div underneath this. it should go here if timer for work hits zero OR if take a break button is pressed-->
     <div class="breaktime">
         <h2>How long would you like to take a break for?</h2>
-        <button type="button">5 minutes</button>
-        <!--<button type="button">10 minutes</button>
-        <button type="button">15 minutes</button>
-        <button type="button">skip break</button>-->
+        <button id="butts" type="button">5 minutes</button>
+        <!--<button id="butts" type="button">10 minutes</button>
+        <button id="butts" type="button">15 minutes</button>
+        <button id="butts" type="button">skip break</button>-->
     </div>
     <script> 
         var minutes = 0;
@@ -150,4 +152,5 @@
         </script>
         <button class="chat-close-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
     </div>
+    
 </html>

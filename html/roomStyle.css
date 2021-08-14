@@ -1,4 +1,7 @@
 /* in room.html */
+* {
+    border: 1px solid red;
+}
 .chat {
     position: fixed;
 }
@@ -41,3 +44,49 @@
  .chat-send-btn {
      padding: 2px 2px;
  }
+
+ #butts {
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    position:relative;
+    left: 50%;
+    background-color: white;
+    opacity: 100;
+ }
+
+ h2 {
+    text-align:center;
+    color: black;
+    opacity: 1;
+ }
+
+ .worktime, .breaktime {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    opacity: .5;
+    bottom: 50px;
+    clear: none;
+    width: 37%;
+    position: absolute;
+    left: 300px;
+ }
+ p{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: 70px;
+    font-size:200px;
+    position:fixed;
+    top:21rem;
+    left: 30rem;
+}
+.rect{
+   position: fixed; 
+   background: #d4c4d4b9;
+   top: 17rem;
+   left:28rem;
+   width: 560px;
+   height: 200px;
+}
