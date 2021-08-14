@@ -60,11 +60,11 @@
     clear: none;
     width: 37%; 
     position: absolute;
-    left: 460px;
+    left: 36%;
     opacity: 50%;
  }
 
- /*.breaktime {
+ .breaktime {
     background-color: rgb(255, 255, 255);
     color: #fff;
     opacity: .5;
@@ -72,9 +72,9 @@
     clear: none;
     width: 37%;
     position: absolute;
-    left: 300px;
-<<<<<<< HEAD
- }*/
+    left: 36%;
+    opacity: 50%;3
+ }
 
   #butts {
     border-radius: 50%;
@@ -83,14 +83,15 @@
     position:relative;
     left: 42%;
     background-color: white;
-    opacity: 100;
+    opacity: 100 !important;
+    border-width: 5px;
+    border-color: #bd5bbd;
   }
 
   buttons {
       opacity: 1;
   }
-=======
- }
+
  p{
     display: inline-flex;
     align-items: center;
@@ -110,4 +111,3 @@
    width: 560px;
    height: 200px;
 }
->>>>>>> dc1bb7ade2df4c774b526c9fd7d87000ddc9b693
