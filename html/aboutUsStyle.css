@@ -6,3 +6,21 @@
     font-size: large;
     /*border: 1px solid red;*/
 }
+figure {
+    position: absolute;
+    left: 97px;
+
+}
+figcaption {
+    position: absolute;
+    top: 325px;
+    bottom: 20px;
+    left: 425px;
+    width: 700px;
+    height: 180px;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right:auto;
+    text-align: left;
+}
