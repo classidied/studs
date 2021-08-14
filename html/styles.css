@@ -78,7 +78,6 @@
 .breaktime{
     visibility: hidden;
 }
-<<<<<<< HEAD
 
 .chat-btn {
     background-color: #5fbbf0;
@@ -93,7 +92,6 @@
 }
 
 .chat-btn {border-radius: 50%;}
-=======
 body{
     background: #d3c4d3;
     background-size: 400% 400%;
@@ -134,4 +132,3 @@ image{
     left:100rem;
     position:absolute;
 }
->>>>>>> da1fd3b54fa13ebceb2e34ae62b71d744e69f700
