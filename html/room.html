@@ -88,17 +88,30 @@
     
     <!-- chat function???? -->
     <div class="chat">
-        <h2>Chat</h2>
+        <button class="chat-open-btn" id="chat-open-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
+        
         <!-- form thing for chat? -->
         <ul id="messages"></ul>
         <form id="chat-form">
             <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
-            
             <div>
-                <button class="chat-open-btn" id="chat-open-btn" onCLick="openForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
                 <script>
-                    var clicked = document.getElementById('chat-open-btn');
-
+                    document.getElementById('chat-open-btn').onclick = function() {
+                        document.getElementById("chat-form").style.display="block";
+                    }​;
+                    document.getElementById('chat-close-btn').onclick = function() {
+                        document.getElementById("chat-form").style.display="none";
+                    };
+                   /*
+                    document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
+                    document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
+                    function openForm() {
+                        document.querySelector(".chat-open-btn").style.display = "block";
+                    }
+                    function closeForm() {
+                        document.querySelector(".chat-close-btn").style.display = "none";
+                    }
+                    */
                 </script>
             </div>
             <input id="chat-input" autocomplete="off" />
@@ -119,7 +132,14 @@
                 input.value = '';
                 }
             });
+
+            socket.on('chat message', function(msg) {
+                var item = document.createElement('li');
+                item.textContent = msg;
+                messages.appendChild(item);
+                window.scrollTo(0, document.body.scrollHeight);
+            });
         </script>
-        <button class="chat-close-btn" onclick="closeForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
+        <button class="chat-close-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
     </div>
 </html>
