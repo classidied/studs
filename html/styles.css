@@ -82,7 +82,7 @@
 
 body {
     background: #d3c4d3;
-    background-size: 400% 400%;
+    background-size: 400% %;
     /*overflow: hidden;*/
     position: relative;
     animation: change 15s ease-in-out infinite;
@@ -109,7 +109,7 @@ button{
     transform: translate (-50%, -50%);
 }
 .rect{
-    position: absolute; 
+    position: fixed; 
     background: #bd5bbd;
     top: 17rem;
     left:34.5rem;
@@ -118,13 +118,13 @@ button{
 }
 foot {
     position: fixed;  
-    left: 0;  
+    left: 10px;  
     bottom: 5px;  
-    right: 0;   
+    right: 10px;   
     width: 100%;  
     background-color:black;  
     color: white;  
-    text-align: center;
+    text-align: center;  
 }
 image{
     top: 20rem;
