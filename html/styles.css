@@ -139,3 +139,7 @@
 .main{
     background-color: #b968b9;
 }
+
+#breaktime{
+    visibility: "hidden";
+}
