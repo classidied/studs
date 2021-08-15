@@ -1,6 +1,6 @@
 /* in room.html */
 * {
-
+    border-color: red;
 }
 .chat {
     position: fixed;

@@ -105,33 +105,33 @@
             </div>
         </div>
         <!-- checking if the chat button was clicked-->
+        <script>
+            document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
+            document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
+            function openForm() {
+                document.querySelector(".chat-close-btn").style.display = "block";
+                document.getElementById("chat-form").style.display="block";
+            }
+            function closeForm() {
+                document.querySelector(".chat-open-btn").style.display = "block";
+                document.getElementById("chat-form").style.display="none";
+            }
+        </script>
         <div>
-            <script>
-                /*
-                document.getElementById('chat-open-btn').onclick = function() {
-                    document.getElementById("chat-form").style.display="block";
-                    document.getElementById('chat-open-btn').style.display="none";
-                    document.getElementById('chat-close-btn').style.display="block";
-                }​;
-                document.getElementById('chat-close-btn').onclick = function() {
-                    document.getElementById("chat-form").style.display="none";
-                    document.getElementById('chat-close-btn').style.display="none";
-                    document.getElementById('chat-open-btn').style.display="block";
-                };
-                */
-               
-                document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
-                document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
-                function openForm() {
-                    document.querySelector(".chat-close-btn").style.display = "block";
-                    document.getElementById("chat-form").style.display="block";
-                }
-                function closeForm() {
-                    document.querySelector(".chat-open-btn").style.display = "block";
-                    document.getElementById("chat-form").style.display="none";
-                }
-                
-            </script>
+            
+            <!--
+            document.getElementById('chat-open-btn').onclick = function() {
+                document.getElementById("chat-form").style.display="block";
+                document.getElementById('chat-open-btn').style.display="none";
+                document.getElementById('chat-close-btn').style.display="block";
+            }​;
+            document.getElementById('chat-close-btn').onclick = function() {
+                document.getElementById("chat-form").style.display="none";
+                document.getElementById('chat-close-btn').style.display="none";
+                document.getElementById('chat-open-btn').style.display="block";
+            };
+            -->
+           
         </div>
         <!-- establishing connection through socket.io -->
         <script src="/socket.io/socket.io.js"></script>
