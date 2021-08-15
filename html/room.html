@@ -46,48 +46,46 @@
     </head>
     <body>
         <p id="countdown"></p>
-        <script src="timerScript.js"></script>
     </body>
     <div class="worktime"> <!--buttons are here, and they choose what time they'd like. after the brak timer hits 0 it should go here OR if skip break button is here-->
         <h2>How long would you like to work?</h2>
-        <button id="butts" type="button" value="">55 minutes</button> <!--purposely not capitalized for the aesthetics-->
+        <button id="butts" type="button" value="55">55 minutes</button> <!--purposely not capitalized for the aesthetics-->
         <button id="butts" type="button">25 minutes</button>
         <button id="butts" type="button">15 minutes</button>
         <button id="butts" type="button">1 hour</button>
     </div>
     <!--JS: if they press "take a break instead" it should go to the next div thing, the div underneath this. it should go here if timer for work hits zero OR if take a break button is pressed-->
     <div class="breaktime">
+    <butts>
         <h2>How long would you like to take a break for?</h2>
         <button id="butts" type="button">5 minutes</button>
         <button id="butts" type="button">10 minutes</button>
         <button id="butts" type="button">15 minutes</button>
-        <button id="butts" type="button">20 minutes</button>
+        <button id="butts" type="button">none</button>
+    </butts>
     </div>
+    <script>
+        const startingMin=55;
+        let time=startingMin*60;
 
-    <script> 
-        var minutes = 0;
-        var seconds = 0;
-        var interval = null;
-        document.getElementsByClassName('worktime').addEventListener('change', e => {
-               minutes = +e.target.value; //idk wtf this does dont ask me
-        }); 
-        document.getElementsByClassName('startTimer').addEventListener('click', () => {
-            var timeInSeconds = (minutes * 60);
-            var  displayTime = () => {
-            var displayMinutes = minutes;
-            document.getElementById("timer").innerHTML = displayMinutes + " : " + displaySeconds;
-            };
-        });
+        const countdownEl= document.getElementById('countdown');
+
+        setInterval (updateCD,1000);
+
+        function updateCD(){
+            if (time==0){
+                alert("Go take a break! You worked really hard!");
+                time=startingMin*60;
+            }
+        const minutes=Math.floor(time/60);
+        let seconds = time%60;
+
+        seconds= seconds<10? '0'+seconds:seconds;
+        countdownEl.innerHTML= `${minutes}:${seconds}`;
+        time--;
+        }
     </script>
 
-    <!--somewhere here i think there's gonna be some js that uses the value the user pressed for the timer thing-->
-    <div>
-        <p id="timer"></p>
-        <script> //okay so this is actually javascript now so yeah...basically here you wanna get the timer stuff
-            //var countDownDate = new Date ("") <-i have no idea if this works i just googles this shit
-        </script>
-    </div>
-    
     <!-- chat function???? -->
     <div class="chat">
         <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
