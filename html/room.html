@@ -72,54 +72,55 @@
         }
     </script>
 
-    <!-- chat function???? -->
+    <!-- chat function???? notepad function!! -->
     <div class="chat">
-        <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
+        <!-- button to open/close chat/notepad  -->
         <button class="chat-open-btn" onClick="openForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
-        <button class="chat-close-btn" onClick="closeForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
-        <!-- giant empty container thing to log messages and whatever -->
-        <div class="container">
-            <header class="chat-header">Chat!</header>
-            <!-- form thing for chat? -->
-            <div class="form-container">
-                <form id="chat-form">
-                    <input id="chat-input" autocomplete="off" type="text" placeholder="Send a message"/>
-                    <button class="chat-send-btn">send</button>
-                </form>
-            </div>
-        </div>
+        
         <!-- checking if the chat button was clicked-->
         <script>
+            /*
             document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
             document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
             function openForm() {
                 document.querySelector(".chat-close-btn").style.display = "block";
-                document.getElementById("chat-form").style.display="block";
+                document.getElementById(".container").style.display="block";
             }
             function closeForm() {
                 document.querySelector(".chat-open-btn").style.display = "block";
-                document.getElementById("chat-form").style.display="none";
+                document.getElementById(".container").style.display="none";
             }
-        </script>
-        <div>
-            
-            <!--
+            */
             document.getElementById('chat-open-btn').onclick = function() {
-                document.getElementById("chat-form").style.display="block";
+                document.getElementById('container').style.display="block";
                 document.getElementById('chat-open-btn').style.display="none";
                 document.getElementById('chat-close-btn').style.display="block";
             }​;
             document.getElementById('chat-close-btn').onclick = function() {
-                document.getElementById("chat-form").style.display="none";
+                document.getElementById('container').style.display="none";
                 document.getElementById('chat-close-btn').style.display="none";
                 document.getElementById('chat-open-btn').style.display="block";
             };
-            -->
-           
+        </script>
+        <!-- giant empty container thing to log messages and whatever -->
+        <div class="container" id="container">
+            <header class="chat-header">To-do:</header>
+            <ul class="tasks">
+                <p class="task">1. eat the bourgeoisie</p>
+            </ul>
+            <!-- form thing -->
+            <div class="form-container">
+                <form id="chat-form">
+                    <input id="chat-input" autocomplete="off" type="text" placeholder="List your tasks here!"/>
+                    <button class="chat-send-btn">>></button>
+                </form>
+            </div>
         </div>
-        <!-- establishing connection through socket.io -->
+        <button class="chat-close-btn" onClick="closeForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
+        <!-- establishing connection through socket.io (nope we aren't!)-->
         <script src="/socket.io/socket.io.js"></script>
         <script>
+            /*
             var socket = io();
 
             var form = document.getElementById('form');
@@ -139,6 +140,7 @@
                 messages.appendChild(item);
                 window.scrollTo(0, document.body.scrollHeight);
             });
+            */
         </script>
         
     </div>
