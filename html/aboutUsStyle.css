@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
-    border: 1px solid red; /*i afk now*/ <------
+    
 }
 
 p {
@@ -13,13 +13,18 @@ p {
 
 figure {
     position: relative;
-    /*left: 97px; MAYBE THIS ISNT NECESSARY*/
+    left: 10rem;
     text-align: center;
     float: left;
-    display: inline-block;
     margin: 15px;
 }
-
+#jt{
+    position:absolute;
+    left:50rem;
+    float:right;
+    margin:15px;
+    text-align: center;
+}
 img {
     border-color: #aa5ff0;
     border-width: 5px;
