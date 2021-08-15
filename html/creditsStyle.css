@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: large;
     /*border: 1px solid red;*/
 }
 
@@ -71,93 +70,22 @@
     transition:all 0.3s ease;
 }
 
-.main{
-    background-color: #b968b9;
-}
-
-.breaktime{
-    visibility: hidden;
-}
-
 body {
     background: #d3c4d3;
     background-size: 400%;
     /*overflow: hidden;*/
     position: relative;
-    animation: change 15s ease-in-out infinite;
 }
-
-h1 {
-    font-size:1.3rem;
-    color: white;
-    position:absolute;
-    top: 18.5rem;
-    left: 28rem;
-    transform: translate (-50%, -50%);
-}
-input{
-    position:absolute;
-    top: 22rem;
-    left: 37rem;
-    transform: translate (-50%, -50%);
-    height: 40px;
-}
-button{
-    position:absolute;
-    top: 25rem;
-    left: 40.5rem;
-    transform: translate (-50%, -50%);
-}
-.rect{
-    position: fixed; 
-    background: #bd5bbd;
-    top: 17rem;
-    left:25rem;
-    width: 650px;
-    height: 200px;
-}
-foot {
-    position: fixed;  
-    bottom: 5px;  
-    width: 100%;  
-    background-color:black;  
-    color: white;  
-    text-align: center;  
-}
-image{
-    top: 20rem;
-    left:100rem;
-    position:absolute;
-}
-/* for a translucent box/mask over most of the bg image to make text more readable
-.box {
-    height:666px;
-    width:666px;
-    background-color: rgb(255, 255, 255);
-    color: #fff;
-    opacity: .5;
-}
-*/
-figcaption{
-    position:absolute;
-    text-align: center;
-    margin: 0.1in 0 0.5in 0;
-    font-size: 14px;
-}
-p{
-    text-align: left;
-    margin:2rem 1in 2rem 1in;
-}
-figure{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 27%;
-}
-marquee {
+#credits {
     position: absolute;
-    top: 97px;
-    font-size: 2rem;
-    font-family: Trattatello, fantasy, bold;
-  }
-
+    left: 8%;
+    top: 130px;
+}
+#smal {
+    position: relative;
+    left: 12%;
+}
+h1 {
+    text-decoration-style:solid; /*i wish this would work.*/
+    font-weight: boldest;
+}

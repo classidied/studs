@@ -4,23 +4,23 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
-    /*border: 1px solid red;*/
+    border: 1px solid red; /*i afk now*/ <------
 }
-figure {
-    position: absolute;
-    left: 97px;
 
+p {
+    position: relative;
 }
-figcaption {
-    position: absolute;
-    top: 325px;
-    bottom: 20px;
-    left: 425px;
-    width: 700px;
-    height: 180px;
-    line-height: 24px;
-    font-size: 13px;
-    font-weight: bold;
-    margin-right:auto;
-    text-align: left;
+
+figure {
+    position: relative;
+    /*left: 97px; MAYBE THIS ISNT NECESSARY*/
+    text-align: center;
+    float: left;
+    display: inline-block;
+    margin: 15px;
+}
+
+img {
+    border-color: #aa5ff0;
+    border-width: 5px;
 }
