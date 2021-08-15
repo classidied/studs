@@ -58,31 +58,32 @@
     <div class="breaktime">
     <butts>
         <h2>How long would you like to take a break for?</h2>
-        <button id="butts" type="button">5 minutes</button>
+        <button id="butts" type="button"> 5 minutes</button>
         <button id="butts" type="button">10 minutes</button>
         <button id="butts" type="button">15 minutes</button>
         <button id="butts" type="button">none</button>
     </butts>
     </div>
     <script>
-        const startingMin=55;
+        let startingMin= 40;
         let time=startingMin*60;
-
+        
         const countdownEl= document.getElementById('countdown');
 
         setInterval (updateCD,1000);
 
         function updateCD(){
-            if (time==0){
-                alert("Go take a break! You worked really hard!");
-                time=startingMin*60;
-            }
+            
         const minutes=Math.floor(time/60);
         let seconds = time%60;
 
         seconds= seconds<10? '0'+seconds:seconds;
         countdownEl.innerHTML= `${minutes}:${seconds}`;
         time--;
+        if (time==0){
+                alert("Go take a break! You worked really hard!");
+                time=startingMin*60;
+            }
         }
     </script>
 
