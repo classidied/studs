@@ -108,13 +108,20 @@
         <div class="container" id="container">
             <header class="chat-header">To-do:</header>
             <ul class="tasks">
-                <p class="task">1. eat the bourgeoisie</p>
+                <li class="task">
+                    eat the bourgeoisie 
+                </li>
+                <li class="task">
+                    destroy the patriarchy 
+                </li>
+                <li class="task"></li>
             </ul>
             <!-- form thing -->
             <div class="form-container">
-                <form id="chat-form">
-                    <input id="chat-input" autocomplete="off" type="text" placeholder="List your tasks here!"/>
+                <form id="chat-form" action="/input.js">
+                    <input id="input" autocomplete="off" type="text" placeholder="List your tasks here!"/>
                     <button class="chat-send-btn">>></button>
+                    <script> src="input.js"</script>
                 </form>
             </div>
         </div>

@@ -42,7 +42,7 @@
     color: white;
 }
 
-#chat-input {
+#input {
     width: 17%;
     padding: 5px 8px;
     margin: 8px 0;
@@ -64,19 +64,21 @@
     position: fixed;
     width: 260;
     height: 280;
-    right: 31px;
-    bottom: 139px;
+    right: 60px;
+    bottom: 339px;
     box-sizing: border-box;
-    border-outline: red;
 }
+/*
 .task {
     width: 100px;
     height: 70px;
     font-size:20px;
     position:fixed;
-    right: 31px;
-    bottom: 139px;
+    right: 181px;
+    bottom: 239px;
+    box-sizing: border-box;
 }
+*/
 
  h2 {
     text-align:center;
@@ -123,7 +125,7 @@
       opacity: 1;
   }
 
- p{
+ #countdown {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
