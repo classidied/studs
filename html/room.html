@@ -51,17 +51,17 @@
     <div class="worktime"> <!--buttons are here, and they choose what time they'd like. after the brak timer hits 0 it should go here OR if skip break button is here-->
         <h2>How long would you like to work?</h2>
         <button id="butts" type="button" value="">55 minutes</button> <!--purposely not capitalized for the aesthetics-->
-        <!--<button id="butts" type="button">25 minutes</button>
+        <button id="butts" type="button">25 minutes</button>
         <button id="butts" type="button">15 minutes</button>
-        <button id="butts" type="button">take a break</button>-->
+        <button id="butts" type="button">take a break</button>
     </div>
     <!--JS: if they press "take a break instead" it should go to the next div thing, the div underneath this. it should go here if timer for work hits zero OR if take a break button is pressed-->
     <div class="breaktime">
         <h2>How long would you like to take a break for?</h2>
         <button id="butts" type="button">5 minutes</button>
-        <!--<button id="butts" type="button">10 minutes</button>
+        <button id="butts" type="button">10 minutes</button>
         <button id="butts" type="button">15 minutes</button>
-        <button id="butts" type="button">skip break</button>-->
+        <button id="butts" type="button">skip break</button>
     </div>
     <script> 
         var minutes = 0;
@@ -90,35 +90,46 @@
     <!-- chat function???? -->
     <div class="chat">
         <!-- button to open chat  style="background: url(https://cdn.discordapp.com/attachments/856693825014726696/876172132491612220/purple_circle.png)"-->
-        <button class="chat-open-btn" id="chat-open-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
-        <!-- form thing for chat? -->
-        <ul id="messages"></ul>
-        <form id="chat-form">
-            <h1>Chat!</h1>
-            
-            
-            <input id="chat-input" autocomplete="off"/>
-            <button class="chat-send-btn">send</button>
-        </form>
+        <button class="chat-open-btn" onClick="openForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182620290023524/open.png)"></button>
+        <button class="chat-close-btn" onClick="closeForm()" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
+        <!-- giant empty container thing to log messages and whatever -->
+        <div class="container">
+            <header class="chat-header">Chat!</header>
+            <!-- form thing for chat? -->
+            <div class="form-container">
+                <form id="chat-form">
+                    <input id="chat-input" autocomplete="off" type="text" placeholder="Send a message"/>
+                    <button class="chat-send-btn">send</button>
+                </form>
+            </div>
+        </div>
         <!-- checking if the chat button was clicked-->
         <div>
             <script>
+                /*
                 document.getElementById('chat-open-btn').onclick = function() {
                     document.getElementById("chat-form").style.display="block";
+                    document.getElementById('chat-open-btn').style.display="none";
+                    document.getElementById('chat-close-btn').style.display="block";
                 }​;
                 document.getElementById('chat-close-btn').onclick = function() {
                     document.getElementById("chat-form").style.display="none";
+                    document.getElementById('chat-close-btn').style.display="none";
+                    document.getElementById('chat-open-btn').style.display="block";
                 };
-               /*
+                */
+               
                 document.querySelector(".chat-open-btn") .addEventListener("click", openForm);
                 document.querySelector(".chat-close-btn").addEventListener("click", closeForm);
                 function openForm() {
-                    document.querySelector(".chat-open-btn").style.display = "block";
+                    document.querySelector(".chat-close-btn").style.display = "block";
+                    document.getElementById("chat-form").style.display="block";
                 }
                 function closeForm() {
-                    document.querySelector(".chat-close-btn").style.display = "none";
+                    document.querySelector(".chat-open-btn").style.display = "block";
+                    document.getElementById("chat-form").style.display="none";
                 }
-                */
+                
             </script>
         </div>
         <!-- establishing connection through socket.io -->
@@ -144,7 +155,7 @@
                 window.scrollTo(0, document.body.scrollHeight);
             });
         </script>
-        <button class="chat-close-btn" style="background: url(https://cdn.discordapp.com/attachments/834608507911143475/876182613386211419/close.png)"></button>
+        
     </div>
     
 </html>
