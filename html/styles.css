@@ -156,8 +156,8 @@ figure{
 }
 marquee {
     position: absolute;
-    top: 97px;
+    top:150px;
     font-size: 2rem;
-    font-family: Trattatello, fantasy, bold;
+    font-family: 'Montserrat', sans-serif;
   }
 
