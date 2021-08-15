@@ -4,7 +4,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="roomStyle.css">
     <link rel="stylesheet" href="nav.css">
+    <title>Study Better FUCKERS</title>
     <head>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- 
             background photo: send user selection for bg to a js file, script inside the url
@@ -50,7 +52,7 @@
     
     </div>
     <script>
-        let startingMin= 40;
+        let startingMin= 45;
         let time=startingMin*60;
         
         const countdownEl= document.getElementById('countdown');
@@ -66,7 +68,7 @@
         countdownEl.innerHTML= `${minutes}:${seconds}`;
         time--;
         if (time==0){
-                alert("Go take a break! You worked really hard!");
+                alert("Go take a break! You worked really hard! Once you come back, press okay to restart your timer.");
                 time=startingMin*60;
             }
         }
