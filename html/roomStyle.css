@@ -67,26 +67,26 @@
  }
 
  .worktime {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.568);
     color: #fff;
-    bottom: 125px;
     clear: none;
     width: 37%; 
+    height:140px;
     position: absolute;
-    left: 36%;
-    opacity: 50%;
+    left: 30px;
+    bottom: 0;
+
  }
 
  .breaktime {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.568);
     color: #fff;
-    opacity: .5;
-    bottom: 125px;
+    bottom: 0;
     clear: none;
     width: 37%;
+    height:140px;
     position: absolute;
-    left: 36%;
-    opacity: 50%;3
+    left: 33rem;
  }
 
   #butts {
@@ -96,7 +96,7 @@
     position:relative;
     left: 7.7%;
     background-color: white;
-    opacity: 100 !important; /*why tf isnt this working*/
+    opacity: 1 !important; /*why tf isnt this working*/
     border-width: 5px;
     border-color: #bd5bbd;
   }
